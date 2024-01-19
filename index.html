@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first web page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>My first web page</h1>
@@ -33,9 +33,15 @@
       >this link will open zeuslearning.com in new tab</a
     >
     <h2>On click of the following image navigate to Google.com</h2>
-  <a href="https://www.google.com"><img src="google-logo.jpg" alt="Google Logo" width="150px" height="100px"/></a>
+    <a href="https://www.google.com"
+      ><img
+        src="google-logo.jpg"
+        alt="Google Logo"
+        width="150px"
+        height="100px"
+    /></a>
     <h3>Some random table</h3>
-    <table border="2">
+    <table>
       <tr>
         <td>Row 1,cell 1</td>
         <td>Row 1,cell 2</td>
@@ -58,21 +64,23 @@
       </tr>
     </table>
     <h3>Some random form</h3>
-    <p><strong>Note:</strong> It looks the part, but won't do anything</p>
-    <p>Name:</p>
-    <input type="text" placeholder="Your name" />
-    <p>Comments:</p>
-    <textarea>Your comments</textarea>
-    <p>Are you:</p>
+    <p>
+      <strong><i>NOTE:</i></strong> It looks the part, but won't do anything
+    </p>
     <form>
+      <p>Name:</p>
+      <input type="text" placeholder="Your name" />
+      <p>Comments:</p>
+      <textarea rows="10" cols="22">Your comments</textarea>
+      <p>Are you:</p>
       <label>
-        <input type="radio" value="Male" />
+        <input type="radio" name="gender" value="Male" />
         Male
       </label>
       <br />
       <br />
       <label>
-        <input type="radio" value="Female" />
+        <input type="radio" name="gender" value="Female" />
         Female
       </label>
     </form>
